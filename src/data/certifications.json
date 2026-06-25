@@ -1,46 +1,274 @@
 [
   {
-    "name": "AWS Certified Solutions Architect – Associate",
-    "vendor": "AWS",
-    "level": "Associate",
-    "category": "Cloud Architecture",
-    "issuedAt": "2024-05-10",
-    "expiresAt": "2027-05-10",
-    "status": "Active",
-    "badgeImage": "/badges/aws-saa.png",
-    "verificationUrl": "https://www.credly.com/"
-  },
-  {
     "name": "Microsoft Certified: Azure Solutions Architect Expert",
     "vendor": "Microsoft",
     "level": "Expert",
     "category": "Cloud Architecture",
-    "issuedAt": "2024-01-15",
-    "expiresAt": "2025-01-15",
-    "status": "Renewal Required",
-    "badgeImage": "/badges/azure-solutions-architect-expert.png",
-    "verificationUrl": "https://learn.microsoft.com/users/"
-  },
-  {
-    "name": "Google Cloud Certified Professional Cloud Architect",
-    "vendor": "Google Cloud",
-    "level": "Professional",
-    "category": "Cloud Architecture",
-    "issuedAt": "2025-02-20",
-    "expiresAt": "2028-02-20",
     "status": "Active",
-    "badgeImage": "/badges/gcp-cloud-architect.png",
-    "verificationUrl": "https://cloud.google.com/certification"
+    "badgeImage": "/badges/microsoft-azure-solutions-architect-expert.svg"
   },
   {
-    "name": "Red Hat Certified Specialist in Containers and Kubernetes",
-    "vendor": "Red Hat",
+    "name": "Microsoft Certified: Azure Administrator Associate",
+    "vendor": "Microsoft",
+    "level": "Associate",
+    "category": "Cloud Administration",
+    "status": "Active",
+    "badgeImage": "/badges/microsoft-azure-administrator-associate.svg"
+  },
+  {
+    "name": "Microsoft Certified: Azure Developer Associate",
+    "vendor": "Microsoft",
+    "level": "Associate",
+    "category": "Development",
+    "status": "Active",
+    "badgeImage": "/badges/microsoft-azure-developer-associate.svg"
+  },
+  {
+    "name": "Microsoft Certified: Azure Network Engineer Associate",
+    "vendor": "Microsoft",
+    "level": "Associate",
+    "category": "Networking",
+    "status": "Active",
+    "badgeImage": "/badges/microsoft-azure-network-engineer-associate.svg"
+  },
+  {
+    "name": "Microsoft Certified: Azure Security Engineer Associate",
+    "vendor": "Microsoft",
+    "level": "Associate",
+    "category": "Security",
+    "status": "Active",
+    "badgeImage": "/badges/microsoft-azure-security-engineer-associate.svg"
+  },
+  {
+    "name": "Microsoft Certified: Azure Virtual Desktop Specialty",
+    "vendor": "Microsoft",
     "level": "Specialty",
-    "category": "Cloud Native",
-    "issuedAt": "2023-11-10",
-    "expiresAt": "2026-11-10",
+    "category": "Virtualization",
     "status": "Active",
-    "badgeImage": "/badges/redhat-containers-kubernetes.png",
-    "verificationUrl": "https://www.redhat.com/en/services/certification"
+    "badgeImage": "/badges/microsoft-azure-virtual-desktop-specialty.svg"
+  },
+  {
+    "name": "Microsoft Certified: Azure Fundamentals",
+    "vendor": "Microsoft",
+    "level": "Fundamentals",
+    "category": "Cloud",
+    "status": "Active",
+    "badgeImage": "/badges/microsoft-azure-fundamentals.svg"
+  },
+  {
+    "name": "Microsoft Certified: Cybersecurity Architect Expert",
+    "vendor": "Microsoft",
+    "level": "Expert",
+    "category": "Security",
+    "status": "Active",
+    "badgeImage": "/badges/microsoft-cybersecurity-architect-expert.svg"
+  },
+  {
+    "name": "Microsoft Certified: DevOps Engineer Expert",
+    "vendor": "Microsoft",
+    "level": "Expert",
+    "category": "DevOps",
+    "status": "Active",
+    "badgeImage": "/badges/microsoft-devops-engineer-expert.svg"
+  },
+  {
+    "name": "Microsoft Certified: Identity and Access Administrator Associate",
+    "vendor": "Microsoft",
+    "level": "Associate",
+    "category": "Identity",
+    "status": "Active",
+    "badgeImage": "/badges/microsoft-identity-and-access-administrator-associate.svg"
+  },
+  {
+    "name": "Microsoft Certified: Information Protection Administrator Associate",
+    "vendor": "Microsoft",
+    "level": "Associate",
+    "category": "Security",
+    "status": "Active",
+    "badgeImage": "/badges/microsoft-information-protection-administrator-associate.svg"
+  },
+  {
+    "name": "Microsoft Certified: Information Security Administrator Associate",
+    "vendor": "Microsoft",
+    "level": "Associate",
+    "category": "Security",
+    "status": "Active",
+    "badgeImage": "/badges/microsoft-information-security-administrator-associate.svg"
+  },
+  {
+    "name": "Microsoft 365 Administrator Expert",
+    "vendor": "Microsoft",
+    "level": "Expert",
+    "category": "Microsoft 365",
+    "status": "Active",
+    "badgeImage": "/badges/microsoft-365-administrator-expert.svg"
+  },
+  {
+    "name": "Microsoft 365 Security Administrator Associate",
+    "vendor": "Microsoft",
+    "level": "Associate",
+    "category": "Security",
+    "status": "Active",
+    "badgeImage": "/badges/microsoft-365-security-administrator-associate.svg"
+  },
+  {
+    "name": "Microsoft 365 Fundamentals",
+    "vendor": "Microsoft",
+    "level": "Fundamentals",
+    "category": "Microsoft 365",
+    "status": "Active",
+    "badgeImage": "/badges/microsoft-365-fundamentals.svg"
+  },
+  {
+    "name": "MCT: Microsoft Certified Trainer",
+    "vendor": "Microsoft",
+    "level": "Professional",
+    "category": "Training",
+    "status": "Active",
+    "badgeImage": "/badges/mct-microsoft-certified-trainer.svg"
+  },
+  {
+    "name": "MCSA: Windows Server 2012",
+    "vendor": "Microsoft",
+    "level": "Associate",
+    "category": "Windows Server",
+    "status": "Legacy",
+    "badgeImage": "/badges/microsoft-mcsa-windows-server-2012.svg"
+  },
+  {
+    "name": "MCSA: Windows Server 2016",
+    "vendor": "Microsoft",
+    "level": "Associate",
+    "category": "Windows Server",
+    "status": "Legacy",
+    "badgeImage": "/badges/microsoft-mcsa-windows-server-2016.svg"
+  },
+  {
+    "name": "Security Operations Analyst Associate",
+    "vendor": "Microsoft",
+    "level": "Associate",
+    "category": "Security",
+    "status": "Active",
+    "badgeImage": "/badges/microsoft-security-operations-analyst-associate.svg"
+  },
+  {
+    "name": "Teams Administrator Associate",
+    "vendor": "Microsoft",
+    "level": "Associate",
+    "category": "Collaboration",
+    "status": "Active",
+    "badgeImage": "/badges/microsoft-teams-administrator-associate.svg"
+  },
+  {
+    "name": "Windows Server Hybrid Administrator Associate",
+    "vendor": "Microsoft",
+    "level": "Associate",
+    "category": "Windows Server",
+    "status": "Active",
+    "badgeImage": "/badges/microsoft-windows-server-hybrid-administrator-associate.svg"
+  },
+  {
+    "name": "AWS Certified Advanced Networking – Specialty",
+    "vendor": "AWS",
+    "level": "Specialty",
+    "category": "Networking",
+    "status": "Active",
+    "badgeImage": "/badges/aws-advanced-networking-specialty.webp"
+  },
+  {
+    "name": "AWS Certified AI Practitioner",
+    "vendor": "AWS",
+    "level": "Foundational",
+    "category": "AI/ML",
+    "status": "Active",
+    "badgeImage": "/badges/aws-ai-practitioner.svg"
+  },
+  {
+    "name": "AWS Certified Cloud Practitioner",
+    "vendor": "AWS",
+    "level": "Foundational",
+    "category": "Cloud",
+    "status": "Active",
+    "badgeImage": "/badges/aws-cloud-practitioner.svg"
+  },
+  {
+    "name": "AWS Certified Data Engineer – Associate",
+    "vendor": "AWS",
+    "level": "Associate",
+    "category": "Data",
+    "status": "Active",
+    "badgeImage": "/badges/aws-data-engineer-associate.svg"
+  },
+  {
+    "name": "AWS Certified Machine Learning Engineer – Associate",
+    "vendor": "AWS",
+    "level": "Associate",
+    "category": "AI/ML",
+    "status": "Active",
+    "badgeImage": "/badges/aws-ml-engineer-associate.svg"
+  },
+  {
+    "name": "AWS Certified SysOps Administrator – Associate",
+    "vendor": "AWS",
+    "level": "Associate",
+    "category": "Operations",
+    "status": "Active",
+    "badgeImage": "/badges/aws-sysops-admin-associate.svg"
+  },
+  {
+    "name": "AWS Certified Security – Specialty",
+    "vendor": "AWS",
+    "level": "Specialty",
+    "category": "Security",
+    "status": "Active",
+    "badgeImage": "/badges/aws-security-specialty.svg"
+  },
+  {
+    "name": "AWS Certified Solutions Architect – Associate",
+    "vendor": "AWS",
+    "level": "Associate",
+    "category": "Cloud Architecture",
+    "status": "Active",
+    "badgeImage": "/badges/aws-solutions-architect-associate.svg"
+  },
+  {
+    "name": "OCI Certified Architect Associate",
+    "vendor": "Oracle",
+    "level": "Associate",
+    "category": "Cloud Architecture",
+    "status": "Active",
+    "badgeImage": "/badges/oci-architect-associate.svg"
+  },
+  {
+    "name": "OCI Certified DevOps Professional",
+    "vendor": "Oracle",
+    "level": "Professional",
+    "category": "DevOps",
+    "status": "Active",
+    "badgeImage": "/badges/oci-devops-professional.svg"
+  },
+  {
+    "name": "OCI Certified Foundations Associate",
+    "vendor": "Oracle",
+    "level": "Foundational",
+    "category": "Cloud",
+    "status": "Active",
+    "badgeImage": "/badges/oci-foundations-associate.svg"
+  },
+  {
+    "name": "OCI Certified Multicloud Architect Associate",
+    "vendor": "Oracle",
+    "level": "Associate",
+    "category": "Multicloud",
+    "status": "Active",
+    "badgeImage": "/badges/oci-multicloud-architect-associate.svg"
+  },
+  {
+    "name": "Google Cloud Certified Associate Cloud Engineer",
+    "vendor": "Google Cloud",
+    "level": "Associate",
+    "category": "Cloud Engineering",
+    "status": "Active",
+    "badgeImage": "/badges/gcp-associate-cloud-engineer.svg"
   }
 ]
