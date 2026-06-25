@@ -69,3 +69,4 @@ Exemplo de item:
 - O portal usa um JSON local para dados, facilitando manutenção sem código adicional.
 - Para adicionar novos vendors, basta criar novos valores em `vendor` e usar imagens em `public/badges/`.
 # cloud-certifications-portal
+# cloud-certifications-portal

@@ -1,0 +1,12 @@
+---
+const { id, label, options, value } = Astro.props;
+---
+<label class="filter">
+  <span>{label}</span>
+  <select id={id} name={id} class="filter-select" value={value}>
+    <option value="">All</option>
+    {options.map((option) => (
+      <option value={option}>{option}</option>
+    ))}
+  </select>
+</label>

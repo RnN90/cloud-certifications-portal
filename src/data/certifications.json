@@ -1,0 +1,46 @@
+[
+  {
+    "name": "AWS Certified Solutions Architect – Associate",
+    "vendor": "AWS",
+    "level": "Associate",
+    "category": "Cloud Architecture",
+    "issuedAt": "2024-05-10",
+    "expiresAt": "2027-05-10",
+    "status": "Active",
+    "badgeImage": "/badges/aws-saa.png",
+    "verificationUrl": "https://www.credly.com/"
+  },
+  {
+    "name": "Microsoft Certified: Azure Solutions Architect Expert",
+    "vendor": "Microsoft",
+    "level": "Expert",
+    "category": "Cloud Architecture",
+    "issuedAt": "2024-01-15",
+    "expiresAt": "2025-01-15",
+    "status": "Renewal Required",
+    "badgeImage": "/badges/azure-solutions-architect-expert.png",
+    "verificationUrl": "https://learn.microsoft.com/users/"
+  },
+  {
+    "name": "Google Cloud Certified Professional Cloud Architect",
+    "vendor": "Google Cloud",
+    "level": "Professional",
+    "category": "Cloud Architecture",
+    "issuedAt": "2025-02-20",
+    "expiresAt": "2028-02-20",
+    "status": "Active",
+    "badgeImage": "/badges/gcp-cloud-architect.png",
+    "verificationUrl": "https://cloud.google.com/certification"
+  },
+  {
+    "name": "Red Hat Certified Specialist in Containers and Kubernetes",
+    "vendor": "Red Hat",
+    "level": "Specialty",
+    "category": "Cloud Native",
+    "issuedAt": "2023-11-10",
+    "expiresAt": "2026-11-10",
+    "status": "Active",
+    "badgeImage": "/badges/redhat-containers-kubernetes.png",
+    "verificationUrl": "https://www.redhat.com/en/services/certification"
+  }
+]

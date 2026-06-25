@@ -1,0 +1,120 @@
+---
+import certifications from '../data/certifications.json';
+import FilterSelect from '../components/FilterSelect.astro';
+
+const vendors = [...new Set(certifications.map((cert) => cert.vendor))].sort();
+const levels = [...new Set(certifications.map((cert) => cert.level))].sort();
+const categories = [...new Set(certifications.map((cert) => cert.category))].sort();
+const statuses = [...new Set(certifications.map((cert) => cert.status))].sort();
+
+const totalCertifications = certifications.length;
+const activeCertifications = certifications.filter((cert) => cert.status === 'Active').length;
+
+const vendorCounts = vendors.map((vendor) => ({
+  vendor,
+  count: certifications.filter((cert) => cert.vendor === vendor).length,
+}));
+
+const now = new Date();
+
+function formatDate(dateString) {
+  return new Date(dateString).toLocaleDateString('en-GB', {
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric',
+  });
+}
+
+function statusBadgeClass(status) {
+  if (status === 'Active') return 'badge-active';
+  if (status === 'Expired') return 'badge-expired';
+  return 'badge-renewal';
+}
+
+function vendorAccent(vendor) {
+  return vendor.toLowerCase().replace(/\s+/g, '-');
+}
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloud Certifications Portal</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Cloud Certifications Portal</p>
+          <h1>Cloud Certifications Portal</h1>
+          <p class="intro">
+            Um portal pessoal para consolidar certificações e badges verificáveis de AWS, Microsoft, Oracle, Google Cloud, Red Hat e outros.
+          </p>
+        </div>
+
+        <div class="summary-grid">
+          <article class="summary-card">
+            <p class="summary-label">Total de certificações</p>
+            <strong>{totalCertifications}</strong>
+          </article>
+          <article class="summary-card">
+            <p class="summary-label">Certificações ativas</p>
+            <strong>{activeCertifications}</strong>
+          </article>
+          <article class="summary-card summary-vendors">
+            <p class="summary-label">Total por vendor</p>
+            <ul>
+              {vendorCounts.map((item) => (
+                <li>{item.vendor}: {item.count}</li>
+              ))}
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="filters-section">
+        <div class="filters-grid">
+          <FilterSelect id="vendor" label="Vendor" options={vendors} value="" />
+          <FilterSelect id="level" label="Level" options={levels} value="" />
+          <FilterSelect id="category" label="Category" options={categories} value="" />
+          <FilterSelect id="status" label="Status" options={statuses} value="" />
+        </div>
+      </section>
+
+      <section class="cards-grid" id="certifications-grid">
+        {certifications.map((cert) => (
+          <article class={`cert-card vendor-${vendorAccent(cert.vendor)}`}>
+            <div class="card-top">
+              <img src={cert.badgeImage} alt={cert.name} class="badge-image" />
+              <div>
+                <p class="vendor-label">{cert.vendor}</p>
+                <h2>{cert.name}</h2>
+              </div>
+            </div>
+            <div class="card-meta">
+              <span>{cert.level}</span>
+              <span>{cert.category}</span>
+            </div>
+            <div class="card-dates">
+              <div>
+                <strong>Emitido</strong>
+                <span>{formatDate(cert.issuedAt)}</span>
+              </div>
+              <div>
+                <strong>Expira</strong>
+                <span>{formatDate(cert.expiresAt)}</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class={`status-badge ${statusBadgeClass(cert.status)}`}>{cert.status}</span>
+              <a href={cert.verificationUrl} target="_blank" rel="noreferrer" class="verify-link">Verificar</a>
+            </div>
+          </article>
+        ))}
+      </section>
+    </main>
+    <script type="module" src="/scripts/main.js"></script>
+  </body>
+</html>
